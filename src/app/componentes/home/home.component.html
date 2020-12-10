@@ -1,0 +1,146 @@
+<body>
+  <input type="checkbox" id="check">
+  <!--header area start-->
+  <header>
+    <label for="check">
+      <i class="fas fa-bars" id="sidebar_btn"></i>
+    </label>
+    <div class="left_area">
+      <h3>Banco <span>Agrícola</span></h3>
+    </div>
+    <div class="right_area">
+      <a href="#" class="logout_btn"><i class="fas fa-power-off" id="botonhover"></i></a>
+    </div>
+  </header>
+  <!--header area end-->
+  <!--mobile navigation bar start-->
+  <div class="mobile_nav">
+    <div class="nav_bar">
+      <img src="assets/otro.png" class="mobile_profile_image" alt="">
+      <i (click)="salir=!salir" class="fa fa-bars nav_btn"></i>
+    </div>
+    <div class="mobile_nav_items" *ngIf="salir">
+      <a ><i class="fas fa-home"></i><span>Inicio</span></a>
+      <a href="#"><i class="fas fa-cogs"></i><span>Registros</span></a>
+    </div>
+  </div>
+  <!--mobile navigation bar end-->
+  <!--sidebar start-->
+  <div class="sidebar">
+    <div class="profile_info">
+      <img src="assets/profile.png" class="profile_image" alt="" />
+      <!--<img src="otro.png" class="profile_image" alt="">-->
+      <h4>Gabriel Guerrero</h4>
+    </div>
+    <a href="#"><i class="fas fa-desktop"></i><span>Inicio</span></a>
+    <a href="#"><i class="fas fa-user-plus"></i><span>Registros</span></a>
+  </div>
+  <!--sidebar end-->
+
+  <div class="content">
+    <div class="card">
+
+    </div>
+    <div class="card">
+      <h2>Empleados existentes</h2>
+      <div class="tablas" style="width: 100%; height: 500px;">
+        <table datatable class="row-border table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>First name</th>
+              <th>Last name</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Foo</td>
+              <td>Bar</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Someone</td>
+              <td>Youknow</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Iamout</td>
+              <td>Ofinspiration</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Yoda</td>
+              <td>Skywalker</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Patrick</td>
+              <td>Dupont</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>Barack</td>
+              <td>Obama</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>François</td>
+              <td>Holland</td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>Michel</td>
+              <td>Popo</td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>Chuck</td>
+              <td>Norris</td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>Simon</td>
+              <td>Robin</td>
+            </tr>
+            <tr>
+              <td>11</td>
+              <td>Louis</td>
+              <td>Lin</td>
+            </tr>
+            <tr>
+              <td>12</td>
+              <td>Zelda</td>
+              <td>Link</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="card">
+      <div class="tablas" style="width: 100%; height: 500px;"></div>
+    </div>
+  </div>
+
+  <!--<script type="text/javascript">
+  $(document).ready(function(){
+    $('.nav_btn').click(function(){
+      $('.mobile_nav_items').toggleClass('active');
+    });
+  });
+  </script>-->
+
+  <!--MODAL PARA CITAS-->
+
+  <!--MODAL PARA ELIMINAR-->
+</body>
+
+
+
+
+
+
+
+
+
+
